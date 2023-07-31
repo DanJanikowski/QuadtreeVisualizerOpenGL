@@ -66,7 +66,7 @@ struct QuadTree {
 
 private:
 	const int maxDepth = 8;
-	const int maxCapacity = 32;
+	const int maxCapacity = 128;
 
 	std::vector<EntityData*> toReinsert;
 

@@ -73,7 +73,7 @@ QuadTree::~QuadTree() {
 }
 
 void QuadTree::setup(unsigned int numToAdd) {
-	const GLfloat dvel = 0.001;
+	const GLfloat dvel = 0.0001;
 	for (int i = 0; i < numToAdd; i++) {
 		addPoint((rand() / (float)RAND_MAX) * 2.0 - 1.0, (rand() / (float)RAND_MAX) * 2.0 - 1.0,
 			((rand() / (float)RAND_MAX) * 2.0 - 1.0) * dvel, ((rand() / (float)RAND_MAX) * 2.0 - 1.0) * dvel);

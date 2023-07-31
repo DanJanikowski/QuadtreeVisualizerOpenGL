@@ -1,7 +1,7 @@
 
 #include "renderObject.h"
 
-RenderObject::RenderObject(bool requireIndices_) {
+RenderObject::RenderObject(bool requireIndices_) : requireIndices(false) {
 	requireIndices = requireIndices_;
 
 	glGenVertexArrays(1, &VAO_ID);

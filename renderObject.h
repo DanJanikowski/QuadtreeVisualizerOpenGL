@@ -12,7 +12,7 @@
 // to declutter the functionality of the Environment class
 class RenderObject {
 public:
-	RenderObject() : requireIndices(false) {}
+	RenderObject();
 	RenderObject(bool requireIndices_);
 	~RenderObject();
 

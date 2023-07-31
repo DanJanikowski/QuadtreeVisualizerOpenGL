@@ -74,18 +74,11 @@ void Scene::drawLoop() {
 	using std::chrono::milliseconds;
 
 
-	qt->setup(100000);
+	qt->setup(10000);
 	//qt->print1();
 
 	qt->packEntities(false);
 	qt->packQuadTree(false);
-
-	// FPS variables
-	double prevTime = 0.0;
-	double curTime = 0.0;
-	double timeDiff;
-	float frameTime = 0.00001; // For time dependent movement
-	unsigned int counter = 0;
 
 	// Main drawing while loop
 	float iter = 0;
